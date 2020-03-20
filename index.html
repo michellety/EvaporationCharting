@@ -9,60 +9,52 @@
     <!-- Bootstrap 4.4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Style -->
+    <link href="./style.css" rel="stylesheet" />
+
 </head>
 
-<body style="background-color: rgba(89, 152, 224, 0.795);">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="./images/Log.png" alt="specimen" class="img-fluid mx-auto d-block">
+<body>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">Hobby Experiment</h1>
                 </div>
-                <div class="col-lg-4">
-                    <h1 class="display-4">Home Experiment Over 6 Months</h1>
-                    <p class="lead">Yes, this is real data.</p>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white font-weight-light mb-5">6 Months of data..</p>
+                    <a class="btn btn-xl js-scroll-trigger" href="#textSection">View Results</a>
                 </div>
-                <div class="col-lg-4">
+            </div>
+        </div>
+    </header>
+
+    <div id="textSection">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-6 text-center">
+                    <p>What better way to track data than directly on the specimen?</p>
+                </div>
+                <div class="col-lg-6">
                     <img src="./images/scientist.png" alt="scientist" class="img-fluid mx-auto d-block">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <canvas id="myChart"></canvas>
+    <div id="chartSection">
+        <div class="container">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
 
+    <footer class="footer text-center text-white py-1">
+        <div> Made by Michelle</div>
+    </footer>
 
-    </div>
-    <script>
-        let myChart = document.getElementById("myChart").getContext("2d");
-        let massPopChart = new Chart(myChart, {
-            type: "line",
-            data: {
-                labels: ["September 3", "September 4", "September 5", "September 6", "September 7", "September 8", "September 9", "September 10", "September 11", "September 12", "September 14", "September 15", "September 20", "September 21", "September 23", "September 24", "September 25", "October 3", "October 6", "October 15", "October 24", "November 28", "February 29"],
-                datasets: [{
-                    label: "Weight",
-                    data: [
-                        2518, 2392, 2278, 2231, 2213, 2188, 2165, 2147, 2125, 2106, 2065, 2059, 2016, 2003, 1983, 1963, 1960, 1929, 1910, 1880, 1842, 1806, 1786
-
-                    ],
-                    backgroundColor: "lightblue"
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: "Green to kindling: Water Depreciation Over Time",
-                    fontSize: 25,
-                },
-                legend: {
-                    display: true,
-                    position: "right"
-                }
-            }
-        })
-    </script>
+    <!-- JavaScript -->
+    <script src="data.js"></script>
 </body>
 
 </html>
