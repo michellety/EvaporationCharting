@@ -11,13 +11,13 @@ let massPopChart = new Chart(myChart, {
                 2518, 2392, 2278, 2231, 2213, 2188, 2165, 2147, 2125, 2106, 2065, 2059, 2016, 2003, 1983, 1963, 1960, 1929, 1910, 1880, 1842, 1806, 1786
             ],
             backgroundColor: "rgb(70, 139, 228)",
-            hoverBackgroundColor: "navy"
+            hoverBackgroundColor: "rgb(45, 26, 116)"
         }]
     },
     options: {
         title: {
             display: true,
-            text: "Green to kindling: Weight Loss Over Time Due to Water Depreciation",
+            text: "Green to Kindling: Weight vs Time",
             fontSize: 25,
             fontColor: "#FFFFFF"
         },
