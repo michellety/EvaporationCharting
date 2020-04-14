@@ -11,8 +11,20 @@ let massPopChart = new Chart(myChart, {
                 2518, 2392, 2278, 2231, 2213, 2188, 2165, 2147, 2125, 2106, 2065, 2059, 2016, 2003, 1983, 1963, 1960, 1929, 1910, 1880, 1842, 1806, 1786
             ],
             backgroundColor: "rgb(70, 139, 228)",
-            hoverBackgroundColor: "rgb(45, 26, 116)"
-        }]
+            hoverBackgroundColor: "rgb(45, 26, 116)",
+            order: 1
+        },
+        {
+            data: [1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259, 1259],
+            type: "line",
+            pointStyle: "line",
+            label: "50% Weight",
+            borderColor: "rgb(45, 26, 116)", 
+            borderWidth: 1,
+            backgroundColor: "rgba(0, 0, 0, 0.37)",
+            order: 0
+        }
+    ]
     },
     options: {
         title: {
@@ -31,7 +43,9 @@ let massPopChart = new Chart(myChart, {
         scales: {
             yAxes: [{
                 ticks: {
-                    fontColor: "white"
+                    fontColor: "white",
+                    beginAtZero: true,
+                    stepSize: 200
                 },
                 gridLines: {
                     color: "white"
@@ -39,7 +53,7 @@ let massPopChart = new Chart(myChart, {
                 scaleLabel: {
                     display: true,
                     labelString: "Weight (g)",
-                    fontColor: "white"
+                    fontColor: "white",
                 }
             }],
             xAxes: [{
