@@ -1,7 +1,7 @@
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("./images/Log.png");
+    background: linear-gradient(to bottom, rgba(73, 67, 62, 0.527) 0%, rgba(92, 77, 66, 0.521) 100%), url("./images/Log.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -19,6 +19,7 @@ header.masthead {
 #chartSection {
     background-color: darkcyan;
     border-top: solid wheat;
+    padding: 2rem;
 }
 
 .btn {
@@ -35,6 +36,8 @@ header.masthead {
     border-top: solid wheat;
     background-color: navy;
     padding-top: 1rem;
+    min-height: 100px;
+    padding: 50px 0;
 }
 
 @media (min-width: 992px) {
